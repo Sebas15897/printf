@@ -1,9 +1,12 @@
 PrintF Project
+
 This is a project in which we will work on the skills to work in a group as well as our knowledge.
 group members:
 
 @adrian-blip @Sebasssssss7
+
 Links:
+
 Proyect:https://intranet.hbtn.io/projects/228
 secrets of printf:https://www.cypress.com/file/54761/download
 
