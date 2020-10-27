@@ -1,68 +1,85 @@
-.Dd 27/10/20               \" DATE
-.Dt Untitled 1      \" Program name and manual section number
-.Sh NAME                 \" Section Header - required - don't modify
-.Nm Untitled,
+.\" Manpage.
 
+.SH NAME
+_printf()  
+what it does is take the input and print it on the standard output.
 
-.TH _PRINTF
-
-.Sh NAME
-_Printf \ - print formated output
-
-.Sh SYNOPSIS
-
-.B _printf
-
+.SH SYNOPSIS
 #include "holberton.h"
+
+.SH Sintaxis
+int _printf(const char *format, ...)
+
+.SH format
+this is the string that carries the text that will be written in stdout. 
 #include <stdarg.h>
 
-int _printf(const char *format, ...);
+.SH DESCRIPTION
+The function _printf() send formatted output to stdout and then use format specifiers to cast arguments to strings, the format specifiers are:
+FORMAT which generates a specific format relative to the specifier input.
 
-.Sh Description
+.SH Return Value
+printf () returns the number of characters printed (except the null byte used to finalize the output to strings).
 
-this function produces an output having in acount a some formats indicated
-by some characters.
+.B %c
+Prints the character passed as parameter
 
-.SH Return value
+.B %s
+Prints text string finished with null character.
 
-After gettin  succes in execution this functions return the number of character
-printed.
+.B %%
+Prints a single '%' character
 
-.Sh Format
+.B %d
+Converts argument to signed decimal notation and print it.
 
-It is used a character or idetifier to give acces to a specific type of format
-wich  are the way users are going to see their outputs
+.B %i
+Converts argument to unsigned decimal notation and print it.
 
-example:
+.B %b
+Convert the unsigned argument to a binary and print it.
 
-_printf("%C",character);
+.B %u
+Prints the integer unsigned decimal conversion.
 
-_printf("%d", decimal number);
+.B %o
+Prints the integer unsigned octal conversion.
 
-when a character is specified by putting a previous percent symbol it says the
-function to look for a subfunction to execute the conversion to that format
+.B %x
+Unsigned hexadecimal conversion in lowercase form.
 
-.Sh The flag characters
+.B %X
+Unsigned hexadecimal conversion uppercase  form.	
 
-these are the main flags this function uses to print formated output:
+.B %p
+Prints a memory address (Pointer).
 
-.It Fl c
+.SH EXAMPLE
 
-gives a character formated to the standard out.
+.RS
+#include "holberton.h"
 
-.It Fl s
+int main(void)
 
-show a string of characters wichc are pointed by *s.
+{
 
-.It Fl %
 
-if a percent symbol is placed next to the format especifier wich is
-an other percent symbol the out put will be the percent character.
+    _printf("%s", String);
 
-.It Fl d
 
-this flag provides the output of integer  decimal base 10
+   _printf("I am a character %s", 'A');
 
-.It Fl i
 
-as was said below this flag shows integer values also in base 10
+   _printf("I am an integer %s", 12);
+
+
+   _printf("I am percentage %%", %);
+
+
+    return (0);
+
+
+}
+
+.SH AUTHOR
+Julio Contreras and Adrian Guerra
