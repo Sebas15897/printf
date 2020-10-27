@@ -1,7 +1,8 @@
 PrintF Project
 
 This is a project in which we will work on the skills to work in a group as well as our knowledge.
-group members:
+
+Members:
 
 @adrian-blip @Sebasssssss7
 
