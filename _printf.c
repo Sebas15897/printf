@@ -32,10 +32,10 @@ int _printf(const char *format, ...)
 				j++;
 			}
 		}
-		else
-		{_putchar(format[i]);
+	else
+	{_putchar(format[i]);
 			j++;
-		}
+	}
 	}
 	va_end(mylist);
 	return (j);
