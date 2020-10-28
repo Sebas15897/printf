@@ -1,4 +1,3 @@
-  
 #include "holberton.h"
 /**
  * _printf - Entry point
