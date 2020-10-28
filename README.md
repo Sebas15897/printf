@@ -9,17 +9,29 @@ Members:
 Links:
 
 Proyect:https://intranet.hbtn.io/projects/228
+
 secrets of printf:https://www.cypress.com/file/54761/download
 
 Compilation
+
 Your code will be compiled this way:
+
 $ gcc -Wall -Werror -Wextra -pedantic *.c
-As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
+
+As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests
+
+files including main functions)
+
 Our main files will include your main header file (holberton.h): #include holberton.h
+
 You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf. Example of test file that you could use:
+
 alex@ubuntu:~/c/printf$ cat main.c 
+
 #include <limits.h>
+
 #include <stdio.h>
+
 #include "holberton.h"
 
 /**
