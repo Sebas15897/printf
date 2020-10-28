@@ -1,85 +1,23 @@
-.\" Manpage.
-
+./documentation about printf work
 .SH NAME
-_printf()  
-what it does is take the input and print it on the standard output.
-
-.SH SYNOPSIS
-#include "holberton.h"
+_printf() - takes input and prints to standard output.
 
 .SH Sintaxis
 int _printf(const char *format, ...)
 
-.SH format
-this is the string that carries the text that will be written in stdout. 
-#include <stdarg.h>
 
 .SH DESCRIPTION
-The function _printf() send formatted output to stdout and then use format specifiers to cast arguments to strings, the format specifiers are:
-FORMAT which generates a specific format relative to the specifier input.
+	the function _printf() sends formatted output to stdout and uses format
+	specifiers to convert arguments into strings. The format specifiers are:
+	FORMAT outputs a specified format relative to the specifier input.
+    
+.SH FORMAT
+    a character is used, to call so to speak a specific type of format
 
-.SH Return Value
-printf () returns the number of characters printed (except the null byte used to finalize the output to strings).
+    example
+    $ _printf ("% C", we indicate n character);
+    $ _printft "% d", we indicate a decimal number);
 
-.B %c
-Prints the character passed as parameter
-
-.B %s
-Prints text string finished with null character.
-
-.B %%
-Prints a single '%' character
-
-.B %d
-Converts argument to signed decimal notation and print it.
-
-.B %i
-Converts argument to unsigned decimal notation and print it.
-
-.B %b
-Convert the unsigned argument to a binary and print it.
-
-.B %u
-Prints the integer unsigned decimal conversion.
-
-.B %o
-Prints the integer unsigned octal conversion.
-
-.B %x
-Unsigned hexadecimal conversion in lowercase form.
-
-.B %X
-Unsigned hexadecimal conversion uppercase  form.	
-
-.B %p
-Prints a memory address (Pointer).
-
-.SH EXAMPLE
-
-.RS
-#include "holberton.h"
-
-int main(void)
-
-{
-
-
-    _printf("%s", String);
-
-
-   _printf("I am a character %s", 'A');
-
-
-   _printf("I am an integer %s", 12);
-
-
-   _printf("I am percentage %%", %);
-
-
-    return (0);
-
-
-}
 
 .SH AUTHOR
 Julio Contreras and Adrian Guerra
